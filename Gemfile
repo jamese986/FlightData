@@ -38,9 +38,12 @@ gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'lodash-rails', '~> 4.17', '>= 4.17.10'
 gem 'faker', '~> 1.9', '>= 1.9.1'
 gem 'money-rails', '~>1.12'
-gem 'bootstrap'
+gem 'bootstrap', '~>4.0.0'
+
 gem 'jquery-rails'
 gem 'sqlite3'
+
+
 
 gem 'omniauth-twitter'
 gem 'omniauth-facebook'
