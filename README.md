@@ -1,24 +1,24 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
+* alpha stage of app
+* Ruby Version
+Ruby 2.5.1p57
+*Rails Version
+Rails 5.2.2
 
 * System dependencies
+nodejs
+sqlite3
 
 * Configuration
+bundle install
 
 * Database creation
+rake db:setup
+rake db:migrate
+rake db:seed
+bundle exec rake import:airlines
+bundle exec rake import:airports
+bundle exec rake import:flights
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...
+rails s
