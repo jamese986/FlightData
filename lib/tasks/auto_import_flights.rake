@@ -11,7 +11,7 @@ namespace :import do
         arrivalTime = Faker::Time.between(DateTime.now - 1, DateTime.now)
 
         airline, airline_id, source_airport, source_airport_id, destination_airport, destination_airport_id, codeshare, stops, equipment = row
-        Flight.create(departureTime: departureTime, arrivalTime: arrivalTime, airlines: airline, base_airport: source_airport, seats: seat, price: price, destination: destination_airport, stops:stops, equipment: equipment)
+        Flight.create(destination: destination_airport, departureTime: departureTime, arrivalTime: arrivalTime, airlines: airline, base_airport: source_airport, seats: seat, price: price, stops:stops, equipment: equipment)
 
     end
   end
