@@ -39,6 +39,8 @@ gem 'lodash-rails', '~> 4.17', '>= 4.17.10'
 gem 'faker', '~> 1.9', '>= 1.9.1'
 gem 'money-rails', '~>1.12'
 gem 'bootstrap', '~>4.0.0'
+gem 'kaminari'
+
 
 gem 'jquery-rails'
 gem 'sqlite3'

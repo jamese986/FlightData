@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require 'rails/all'
+require 'kaminari'
 require 'csv'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
