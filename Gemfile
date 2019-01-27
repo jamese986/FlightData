@@ -43,7 +43,7 @@ gem 'kaminari'
 
 
 gem 'jquery-rails'
-gem 'sqlite3'
+gem 'pg'
 
 
 
