@@ -1,20 +1,28 @@
 <div class="container">
-  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <div clas="col-md-6">
+      <h1>Flights</h1>
+      <p> List of all current flights</p>
+      <h5><%= link_to 'New Flight', new_flight_path %></h5>
+    </div>
+  </div>
 
-  <h1>Flights</h1>
-  <table class="table table-bordered table-hover ">
-  <thead class="thead-dark">
+
+<div class="row">
+  <%= paginate @flights %>
+  <table class="table text-center table-bordered table-hover ">
+  <thead class="thead-dark ">
     <tr>
       <th scope="col">#</th>
       <th scope="col">Departure Time</th>
       <th scope="col">Arrival Time</th>
-      <th scope="col">source_airport</th>
-      <th scope="col">destination</th>
-      <th scope="col">stops</th>
-      <th scope="col">seats</th>
-      <th scope="col">price</th>
-      <th scope="col">equipment</th>
-      <th colspan="3">Actions</th>
+      <th scope="col">Base Airport</th>
+      <th scope="col">Destination</th>
+      <th scope="col">Stops</th>
+      <th scope="col">Seats</th>
+      <th scope="col">Price</th>
+      <th scope="col">Equipment</th>
+      <th scope="col" colspan="3">Actions</th>
     </tr>
   </thead>
 
@@ -37,9 +45,8 @@
   </tbody>
   <% end %>
 </table>
-
+<%= paginate @flights %>
+</div>
 
   <br>
-
-  <%= link_to 'New Flight', new_flight_path %>
 </div>
